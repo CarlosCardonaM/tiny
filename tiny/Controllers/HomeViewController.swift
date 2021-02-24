@@ -61,6 +61,8 @@ class HomeViewController: UIViewController {
         gastosTableView.dataSource = self
         addSubviews()
         
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(image: .add, style: .plain, target: self, action: #selector(configureAddBarButtonItem))
+        
     }
     
     override func viewDidLayoutSubviews() {
@@ -93,6 +95,14 @@ class HomeViewController: UIViewController {
         // Total Saved View
         totalSavedView.addSubview(totalAhorradoLabel)
         totalSavedView.addSubview(ahorradoLabel)
+    }
+    
+    
+    @objc private func configureAddBarButtonItem() {
+        let vc = AddViewController()
+        let navVc = UINavigationController(rootViewController: vc)
+        navVc.navigationBar.prefersLargeTitles = true
+        present(navVc, animated: true)
     }
 
 }

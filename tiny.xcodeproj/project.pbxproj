@@ -16,6 +16,7 @@
 		48363AF825DC936900A1D478 /* RecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48363AF725DC936900A1D478 /* RecordViewController.swift */; };
 		48363AFB25DC937400A1D478 /* GoalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48363AFA25DC937400A1D478 /* GoalViewController.swift */; };
 		48363AFE25DC96B400A1D478 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48363AFD25DC96B400A1D478 /* Extensions.swift */; };
+		48CF40F025E6D679002D084D /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48CF40EF25E6D679002D084D /* AddViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		48363AF725DC936900A1D478 /* RecordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordViewController.swift; sourceTree = "<group>"; };
 		48363AFA25DC937400A1D478 /* GoalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalViewController.swift; sourceTree = "<group>"; };
 		48363AFD25DC96B400A1D478 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		48CF40EF25E6D679002D084D /* AddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +45,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		483416EE25E5E5DB002A82D8 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				48363AFD25DC96B400A1D478 /* Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		48363ACD25DC910E00A1D478 = {
 			isa = PBXGroup;
 			children = (
@@ -64,6 +74,7 @@
 			children = (
 				48363AD925DC910E00A1D478 /* AppDelegate.swift */,
 				48363ADB25DC910E00A1D478 /* SceneDelegate.swift */,
+				483416EE25E5E5DB002A82D8 /* Extensions */,
 				48363AF225DC927600A1D478 /* Model */,
 				48363AEE25DC925500A1D478 /* Controllers */,
 				48363AF025DC926100A1D478 /* Views */,
@@ -79,6 +90,7 @@
 				48363AF425DC933A00A1D478 /* HomeViewController.swift */,
 				48363AF725DC936900A1D478 /* RecordViewController.swift */,
 				48363AFA25DC937400A1D478 /* GoalViewController.swift */,
+				48CF40EF25E6D679002D084D /* AddViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -96,7 +108,6 @@
 			children = (
 				48363AE225DC911100A1D478 /* Assets.xcassets */,
 				48363AE425DC911100A1D478 /* LaunchScreen.storyboard */,
-				48363AFD25DC96B400A1D478 /* Extensions.swift */,
 			);
 			path = "Supporting Files";
 			sourceTree = "<group>";
@@ -180,6 +191,7 @@
 			files = (
 				48363ADA25DC910E00A1D478 /* AppDelegate.swift in Sources */,
 				48363AFE25DC96B400A1D478 /* Extensions.swift in Sources */,
+				48CF40F025E6D679002D084D /* AddViewController.swift in Sources */,
 				48363AFB25DC937400A1D478 /* GoalViewController.swift in Sources */,
 				48363ADC25DC910E00A1D478 /* SceneDelegate.swift in Sources */,
 				48363AF525DC933A00A1D478 /* HomeViewController.swift in Sources */,
@@ -333,6 +345,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 28Y3AJZ4MW;
 				INFOPLIST_FILE = tiny/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -340,7 +353,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.gmail-carlosecardonam1.tiny";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -352,6 +365,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 28Y3AJZ4MW;
 				INFOPLIST_FILE = tiny/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -359,7 +373,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.gmail-carlosecardonam1.tiny";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
